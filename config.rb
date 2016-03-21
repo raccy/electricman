@@ -36,9 +36,26 @@ end
 
 # Build-specific configuration
 configure :build do
+  # Skip clean node_modules
+  set :skip_build_clean do |path|
+    path =~ /\/node_modules\//
+  end
+
   # Minify CSS on build
   # activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript
+end
+
+after_configuration do
+  Opal.paths.each do |path|
+    sprockets.append_path path
+  end
+end
+
+after_build do |builder|
+  builder.thor.inside(config[:build_dir]) do |arg|
+    builder.thor.run 'npm install'
+  end
 end
