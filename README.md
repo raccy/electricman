@@ -1,14 +1,16 @@
 # Electricman
-中間男は、電子を得ることにより、電荷を帯びた電気男に進化した！
-By getting the Electron, the Middleman has evolved into the Electricman!
 
+中間男は、電子を得ることにより、電気男に進化した！
+The the Middleman, by getting the Electron, has evolved into the Electricman!
+
+# ポリシー
 Do not use languages that use C-like syntax!
 
-HTML
+* HTML:
   HAML or Slim
-CSS
+* CSS:
   SASS (not SCSS)
-JavaScript
+* JavaScript:
   CoffeeScript or Opal
-JSON
+* JSON:
   YAML (with ERB)
