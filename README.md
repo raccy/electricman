@@ -1,6 +1,7 @@
 # Electricman
 
 中間男は、電子を得ることにより、電気男に進化した！
+
 The the Middleman, by getting the Electron, has evolved into the Electricman!
 
 # ポリシー
