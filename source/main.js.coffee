@@ -1,1 +1,1 @@
-require('./javascripts/main').Opal.load('main')
+require('./javascripts/main').Opal.require 'main'
