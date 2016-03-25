@@ -30,7 +30,7 @@ app.on('ready') do
     '/index.html')
 
   # Open the DevTools.
-  main_window[:webContents].openDevTools
+  # main_window[:webContents].openDevTools
 
   # Emitted when the window is closed.
   main_window.on('closed') do

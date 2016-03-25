@@ -1,14 +1,22 @@
 ---
-title: Hello World!
---- 
-h1 Hello World!
-|  We are using node 
-coffee:
-  document.write(process.versions.node)
-| , Chrome 
-coffee:
-  document.write(process.versions.chrome)
-| , and Electron 
-coffee:
-  document.write(process.versions.electron)
-| .
+title: Welcome to Electricman
+---
+div.welcome
+  div.logo
+    = image_tag "electricman-logo.svg"
+  h1 Electricman is Running
+  p.doc
+    = link_to "Read Middleman's Documentation Online", "https://middlemanapp.com", target: "_blank"
+  p.doc
+    = link_to "Read Electron's Documentation Online", "http://electron.atom.io/", target: "_blank"
+  p
+    |  We are using node 
+    coffee:
+      document.write(process.versions.node)
+    | , Chrome 
+    coffee:
+      document.write(process.versions.chrome)
+    | , and Electron 
+    coffee:
+      document.write(process.versions.electron)
+    | .
