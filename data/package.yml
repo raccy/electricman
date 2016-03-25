@@ -1,5 +1,7 @@
 name: electricman
 version: 0.1.0
 main: main.js
-dependencies:
-  glob: ^7.0.3
+license: MIT
+description: An electricman is a middleman with an electron.
+repository: https://github.com/raccy/electricman.git
+dependencies: {}

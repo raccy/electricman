@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title><%= current_page.data.title || "Electricman" %></title>
-    <!-- <%= stylesheet_link_tag :site %> -->
-    <!-- <%= javascript_include_tag :all %> -->
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
   </head>
   <body class="<%= page_classes %>">
     <%= yield %>
